@@ -1,0 +1,409 @@
+body {
+  overflow-x: hidden;
+}
+.main {
+  background-color: black;
+  height: 150px;
+  > .c {
+    height: 100%;
+    > .row {
+      height: 100%;
+      > ul {
+        height: 100%;
+        list-style-type: none;
+        > li {
+          > a {
+            color: rgb(186, 186, 90);
+            transition: 0.4s;
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+      > figure {
+        height: 100%;
+        > a {
+          height: 100%;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+        }
+      }
+      .icon {
+        > a {
+          text-decoration: none;
+          > i {
+            color: white;
+            transition: 0.4s;
+            font-size: 30px;
+            &:hover {
+              color: rgb(175, 175, 80);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end header//////// */
+
+.photo {
+  top: 150px;
+  z-index: -100;
+  height: 150vh;
+  > figure {
+    height: 100%;
+    > .img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* end img section/////////// // / */
+
+.tf {
+  z-index: -99;
+  top: calc(150vh + 150px);
+  height: 250vh;
+  > .main {
+    figure {
+      > img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/* end tf////////////// */
+
+.pip {
+  /* border: 2px solid red; */
+  top: calc(400vh + 150px);
+  height: 130vh;
+  z-index: -100;
+  > .main {
+    height: 100%;
+    > figure {
+      height: 100%;
+      > img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    > .h1 {
+      top: 30%;
+      > h1 {
+        position: relative;
+        > hr {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 25%;
+          color: rgb(180, 180, 57);
+          height: 4px;
+        }
+      }
+    }
+    > .box {
+      top: 50%;
+      > .posbox {
+        > div {
+          position: absolute;
+          top: 0;
+          > img {
+            clip-path: circle(50% at 50% 50%);
+          }
+          > p {
+            &:last-child {
+              color: rgb(205, 205, 92);
+            }
+          }
+          &:nth-of-type(1) {
+            animation: pip1 15s linear infinite;
+          }
+          &:nth-of-type(2) {
+            animation: pip2 15s linear infinite;
+          }
+          &:nth-of-type(3) {
+            animation: pip3 15s linear infinite;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes pip1 {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  36% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pip2 {
+  0% {
+    opacity: 0;
+  }
+  36% {
+    opacity: 0;
+  }
+  39% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  69% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pip3 {
+  0% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 0;
+  }
+  72% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* end pip//////////////// */
+
+.fac {
+  position: absolute;
+  top: calc(530% + 150px);
+  height: 80vh;
+  z-index: -99;
+  background-color: black;
+  > .row {
+    height: 100%;
+    > .ul {
+      list-style-type: none;
+
+      height: 75%;
+      > li {
+        border: 1px solid rgb(55, 55, 55);
+        > * {
+          color: white;
+        }
+        > hr {
+          color: rgb(204, 204, 90);
+        }
+        > p {
+          color: rgb(169, 169, 169);
+          font-size: 15px;
+          padding: 0 10px;
+        }
+        > h2 {
+          align-items: end;
+        }
+      }
+    }
+    > .form {
+      height: 25%;
+      border: 1px solid rgb(55, 55, 55);
+      > div {
+        /* height: 100%; */
+        > * {
+          color: rgb(135, 137, 39);
+          /* border: 2px solid red; */
+          /* align-items: center; */
+        }
+        > p {
+          color: rgb(160, 160, 160);
+        }
+      }
+      > form {
+        /* border: 2px solid red; */
+        > div {
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+          > input {
+            border: 1px solid white;
+            transition: 0.4s;
+            color: aliceblue;
+            &::placeholder {
+              color: rgb(197, 197, 197);
+              font-size: 12px;
+              padding: 10px;
+            }
+            &:hover {
+              border: 1px solid rgba(255, 255, 255, 0);
+            }
+          }
+          > button {
+            color: rgb(148, 148, 62);
+            background-color: rgb(46, 46, 46);
+            transition: 0.4s;
+            &:hover {
+              color: aliceblue;
+              background-color: rgba(46, 46, 46, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end fac/////////////////// */
+
+.foot {
+  position: absolute;
+  z-index: -100;
+  /* border: 2px solid red; */
+  top: calc(610% + 150px);
+  height: 60vh;
+  > .feet {
+    height: 100%;
+    > figure {
+      height: 100%;
+      > img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    > .master {
+      > .row {
+        > ul {
+          > li {
+            &:nth-of-type(1) {
+              > h3 {
+                color: rgb(153, 153, 45);
+              }
+              > p {
+                color: white;
+                padding: 0 8px;
+                > a {
+                  text-decoration: none;
+                  color: rgb(153, 153, 45);
+                  transition: 0.4s;
+                  &:hover {
+                    color: white;
+                  }
+                }
+              }
+              > div {
+                > a {
+                  text-decoration: none;
+                  color: rgb(175, 175, 16);
+                  background-color: rgb(77, 77, 77);
+                  padding: 5px;
+                  transition: 0.4s;
+                  &:hover {
+                    background-color: rgb(0, 0, 0);
+                  }
+                }
+              }
+            }
+            &:nth-of-type(2) {
+              > .p {
+                > p {
+                  /* border: 2px solid green; */
+                  color: white;
+                  padding: 0 8px;
+                }
+              }
+              > div {
+                > a {
+                  text-decoration: none;
+                  color: rgb(175, 175, 16);
+                  background-color: rgb(77, 77, 77);
+                  padding: 5px;
+                  transition: 0.4s;
+                  &:hover {
+                    background-color: rgb(0, 0, 0);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end foot/////////////////// */
+
+.foot2 {
+  position: absolute;
+  z-index: -100;
+  /* border: 2px solid red; */
+  top: calc(670% + 150px);
+  height: 25vh;
+  background-color: black;
+  > .main {
+    align-content: center;
+    /* align-items: center; */
+    height: 100%;
+    /* border: 2px solid white; */
+    > p {
+      color: white;
+      display: flex;
+      justify-content: center;
+      > a {
+        color: rgb(146, 137, 42);
+        text-decoration: none;
+        transition: 0.4s;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    > ul {
+      list-style-type: none;
+      > li {
+        height: 40px;
+        width: 40px;
+        margin: 0 3px;
+        border-radius: 8px;
+        > a {
+          /* border: 2px solid red; */
+          background-color: rgb(65, 65, 65);
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          width: 40px;
+          text-decoration: none;
+          transition: 0.4s;
+          &:hover {
+            background-color: rgb(210, 210, 210);
+          }
+          > i {
+            color: rgb(160, 160, 71);
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end foot2////////////////////// */

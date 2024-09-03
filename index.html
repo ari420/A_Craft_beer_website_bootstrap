@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="asset/icon/remixicon.css" />
+    <link rel="stylesheet" href="asset/stylsheet/golobal.css" />
+    <link rel="stylesheet" href="asset/stylsheet/local.css" />
+  </head>
+  <body>
+    <div class="main col-12 position-fixed p-0">
+      <div class="c container-fluid container-xxl p-0">
+        <div class="row m-0 justify-content-center">
+          <ul
+            class="d-none d-md-flex flex-wrap col-md-3 col-lg-4 justify-content-end align-items-center m-0"
+          >
+            <li>
+              <a
+                class="activ px-3 py-1 text-decoration-none text-white"
+                href="#"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a class="px-3 py-1 text-decoration-none" href="#">OUR BEERS</a>
+            </li>
+            <li>
+              <a class="px-3 py-1 text-decoration-none" href="#">EVENTS</a>
+            </li>
+          </ul>
+          <figure class="col-6 col-md-4 col-lg-3 d-flex m-0 p-0">
+            <a class="col-12 justify-content-md-center" href="#"
+              ><img
+                class="mx-2 mx-md-0"
+                src="asset/img/beer_logo_1x-1.png"
+                alt=""
+            /></a>
+          </figure>
+          <ul
+            class="d-none d-md-flex flex-wrap col-md-3 col-lg-4 justify-content-start align-items-center m-0"
+          >
+            <li>
+              <a class="px-3 py-1 text-decoration-none" href="#">OUR STORY</a>
+            </li>
+            <li><a class="px-3 py-1 text-decoration-none" href="#">NEWS</a></li>
+            <li>
+              <a class="px-3 py-1 text-decoration-none" href="#">FIND US</a>
+            </li>
+          </ul>
+          <div
+            class="icon col-6 p-0 d-flex align-items-center justify-content-end d-md-none"
+          >
+            <nav class="navbar navbar-dark  fixed">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header">       
+                    <img src="asset/img/beer_logo_1x-1.png" alt="">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">OUR BEERS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">EVENTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">OUR STORY</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">NEWS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">FIND US</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          PROFILE
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li class="d-flex align-items-center">
+                            <img class="w-25 h-25 m-3 rounded-circle" src="asset/img/png.jpg" alt="">
+                            <p class="font-monospace">Arian Afsharian</p>
+                          </li>
+                          <li><a class="dropdown-item " href="#"><i class="ri-edit-2-line px-2"></i>Edit profile</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item text-danger" href="#"><i class="ri-logout-box-r-line px-2"></i>log out</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search for*" aria-label="Search">
+                      <button class="btn btn-warning" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END HEADER/////////// -->
+
+    <section class="photo col-12 position-absolute position-relative">
+      <figure class="col-12">
+        <img
+          class="img col-12 position-absolute"
+          src="asset/img/beer-hero-bg-2.jpg"
+          alt=""
+        />
+        <img
+          class="img col-12 position-absolute"
+          src="asset/img/beer-hero.png"
+          alt=""
+        />
+      </figure>
+    </section>
+
+    <!-- END IMG SECTION//////////// -->
+
+    <section class="tf container-fluid position-absolute col-12 p-0">
+      <div class="main col-12 h-100 position-relative">
+        <figure class="position-relative col-12 h-100 top-0">
+          <img class="col-12 h-100" src="asset/img/intro_bg.jpg" alt="" />
+        </figure>
+        <div class="row position-absolute top-0 col-12 m-0 h-100">
+          <figure
+            class="f1 col-12 m-0 d-flex justify-content-center align-items-center"
+          >
+            <img src="asset/img/tfbeer_03.png" alt="" />
+          </figure>
+          <div class="flex-wrap d-flex p-0">
+            <div
+              class="h1 col-12 m-0 d-flex justify-content-center text-center text-white"
+            >
+              <h1 class="col-4 d-flex align-items-center">
+                AVADA CRAFT BEERS FUSED WITH RARE INGREDIENTS FROM AROUND THE
+                WORLD
+              </h1>
+            </div>
+            <div
+              class="p col-12 m-0 d-flex justify-content-center text-center text-white-50"
+            >
+              <p class="col-5 d-flex align-items-center">
+                Quisque ultricies mauris sit amet dolor aliquam, eu accumsan
+                etra uns nisi scelerisque. Cras nisl dolor, eleifend ac ficilis
+                lorem ipsum vulputate non, convallis id lorem. Integer non massa
+                nibh.
+              </p>
+            </div>
+          </div>
+          <figure
+            class="f2 col-12 m-0 d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="h-100 col-10 col-md-8 col-lg-6"
+              src="asset/img/beers_home.png"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- end tf//////////////// -->
+
+    <section class="pip container-fluid position-absolute col-12 p-0 m-0">
+      <div class="main col-12 d-flex justify-content-center">
+        <figure class="position-relative col-12">
+          <img class="col-12" src="asset/img/testimonials_bg.jpg" alt="" />
+        </figure>
+        <div
+          class="h1 position-absolute col-6 d-flex justify-content-center align-items-center"
+        >
+          <h1 class="text-white text-center">
+            WHAT PEOPLE ARE SAYING
+            <hr />
+          </h1>
+        </div>
+        <div class="box position-absolute col-7 d-flex">
+          <div class="posbox position-relative col-12">
+            <div class="d-flex flex-wrap justify-content-center">
+              <img
+                class="border col-3 my-4"
+                src="asset/img/testimonial_1.jpg"
+                alt=""
+              />
+              <p class="text-white text-center col-12">
+                These are the best craft beers I’ve ever tasted. Tangy is my
+                favourite but my wife loves Aroma.
+              </p>
+              <p class="text-center col-12">John Smith, London</p>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center">
+              <img
+                class="border col-3 my-4"
+                src="asset/img/testimonial_2.jpg"
+                alt=""
+              />
+              <p class="text-white text-center col-12">
+                These are the best craft beers I’ve ever tasted. Aroma is my
+                favourite but my husband loves Tangy.
+              </p>
+              <p class="text-center col-12">Jane Smith, Manchester</p>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center">
+              <img
+                class="border col-3 my-4"
+                src="asset/img/testimonial_3.jpg"
+                alt=""
+              />
+              <p class="text-white text-center col-12">
+                Since I first tasted Avada Fury I’ve never had anything else.
+                Thank you for creating such a lovey craft beer!.
+              </p>
+              <p class="text-center col-12">Darnell Chapman, New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end pip ////////////////// -->
+
+    <section class="fac container-fluid col-12 p-0">
+      <div class="row m-0">
+        <ul class="ul col-12 d-flex flex-wrap m-0 p-0">
+          <li class="d-flex flex-wrap justify-content-center col-12 col-md-4">
+            <h2 class="col-12 d-flex justify-content-center">QUALITY HOPS</h2>
+            <hr class="d-flex col-4" />
+            <p class="col-12 d-flex justify-content-center text-md-center">
+              Quisque ultricies mauris sit amet dolor aliquam, eu accumsan nisi
+              scelerisque.
+            </p>
+          </li>
+          <li class="d-flex flex-wrap justify-content-center col-12 col-md-4">
+            <h2 class="borde col-12 d-flex justify-content-center">
+              FUSION FLAVOURS
+            </h2>
+            <hr class="d-flex col-4" />
+            <p
+              class="borde col-12 d-flex justify-content-center text-md-center"
+            >
+              Quisque ultricies mauris sit amet dolor aliquam, eu accumsan nisi
+              scelerisque.
+            </p>
+          </li>
+          <li class="d-flex flex-wrap justify-content-center col-12 col-md-4">
+            <h2 class="borde col-12 d-flex justify-content-center">
+              UNIQUE TASTE
+            </h2>
+            <hr class="d-flex col-4" />
+            <p
+              class="borde col-12 d-flex justify-content-center text-md-center"
+            >
+              Quisque ultricies mauris sit amet dolor aliquam, eu accumsan nisi
+              scelerisque.
+            </p>
+          </li>
+        </ul>
+        <div class="form d-flex flex-wrap col-12 p-0">
+          <div class="col-12 col-md-6 d-flex flex-wrap m-0 p-0">
+            <h1 class="col-12 text-center text-md-start px-5">
+              OUR NEWSLETTER
+            </h1>
+            <p class="d-none d-md-flex col-12 text-center text-md-start px-5">
+              Subscribe to our cool newsletter.
+            </p>
+          </div>
+          <form
+            class="col-12 col-md-6 position-relative"
+            action=""
+            method="get"
+          >
+            <div
+              class="d-flex justify-content-center align-items-start col-12 position-absolute mx-md-5 justify-content-md-end"
+            >
+              <input
+                class="p-1 mx-1 bg-dark"
+                placeholder="gmail address*"
+                type="gmail"
+                id="n1"
+                name="gmail"
+              />
+              <button class="p-1" type="submit" id="n1" name="gmail">
+                SUBMIT
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- end fac/////////////// -->
+
+    <section class="foot container-fluid col-12 m-0 p-0">
+      <div class="feet col-12 position-relative">
+        <figure class="col-12">
+          <img class="col-12" src="asset/img/footer_background.jpg" alt="" />
+        </figure>
+        <div class="master position-absolute top-0 col-12 h-100">
+          <div class="row col-12 h-100 m-0">
+            <ul class="col-12 h-100 m-0 p-0 d-flex">
+              <li class="h-100 col-4 d-flex flex-wrap align-content-center">
+                <h3 class="text-center col-12">ABOUT US</h3>
+                <p class="text-center col-12">
+                  we are a majority of web developers trained by master parsa
+                  ghorbanian in parnian web dsign school. to have a beter view
+                  of us, take a look at our <a href="https://trainingsitedesign.ir/learn-web-design/" target="_blank">website.</a>
+                </p>
+                <div class="col-12 d-flex justify-content-center">
+                  <a href="https://trainingsitedesign.ir/learn-web-design/" target="_blank">READ MORE</a>
+                </div>
+              </li>
+              <li class="h-100 col-4 d-flex flex-wrap align-content-center">
+                <figure class="col-12 d-flex justify-content-center">
+                  <img
+                    class="col-10 col-md-6"
+                    src="asset/img/beer_logo_1x-1.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="p col-12 d-flex justify-content-center">
+                  <p class="text-center col-5">
+                    50 BURLEIGH ST COVENT GARDEN LONDON
+                  </p>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <a href="https://trainingsitedesign.ir/learn-web-design/" target="_blank">CONTACT US</a>
+                </div>
+              </li>
+              <li class="h-100 col-4 d-flex flex-wrap align-items-center">
+                <div class="col-12 d-flex justify-content-center">
+                  <a class="text-decoration-none text-white" href="https://trainingsitedesign.ir/learn-web-design/" target="_blank"
+                    >OUR BEERS</a
+                  >
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <a class="text-decoration-none text-white" href="https://trainingsitedesign.ir/learn-web-design/" target="_blank">EVENTS</a>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <a class="text-decoration-none text-white" href="https://trainingsitedesign.ir/learn-web-design/" target="_blank"
+                    >OUR STORY</a
+                  >
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <a class="text-decoration-none text-white" href="https://trainingsitedesign.ir/learn-web-design/" target="_blank">NEWS</a>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <a class="text-decoration-none text-white" href="https://trainingsitedesign.ir/learn-web-design/" target="_blank">FINS US</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end footer//////////////////// -->
+
+    <section class="foot2 container-fluid col-12">
+      <div class="main d-flex flex-wrap">
+        <p class="col-12 font-monospace">
+          © Code by <a class="mx-1" href="https://github.com/ari420" target="_blank">Arian Afsharian</a> • Powerd by
+          <a class="mx-1" href="https://github.com/parsaGhorbanian" target="_blank">Parsa Ghorbanian</a>
+        </p>
+        <ul class="col-12 d-flex justify-content-center">
+          <li class="">
+            <a href="https://www.linkedin.com/in/arian-afsharian-7a3903156" target="_blank"><i class="ri-linkedin-fill"></i></a>
+          </li>
+          <li class="">
+            <a href="https://twitter.com/arian_nw?t=gBHdfXRxznJSKjCqBdt8Yg&s=09" target="_blank"><i class="ri-twitter-x-fill"></i></a>
+          </li>
+          <li class="">
+            <a href="https://www.instagram.com/component__shop?igsh=enRla3lxa3dzYXho" target="_blank"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li class="">
+            <a href="https://www.facebook.com/arian.rust.52?mibextid=ZbWKwL" target="_blank"><i class="ri-facebook-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- end foot2////////////////////// -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
