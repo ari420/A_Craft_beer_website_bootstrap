@@ -366,11 +366,11 @@ body {
       color: white;
       display: flex;
       justify-content: center;
-      font-size: 10px;
+      font-size: 14px;
       > a {
         color: rgb(146, 137, 42);
         text-decoration: none;
-        font-size: 10px;
+        font-size: 14px;
         transition: 0.4s;
         &:hover {
           color: white;
